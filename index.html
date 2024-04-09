@@ -1,719 +1,525 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inicial-scale=1">
-        <title>Fina's Travels</title>
-        <link rel="stylesheet" type= "text/css" href="estilo.css">
+<html lang="en">
 
-        <link rel="stylesheet" 
-        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Paytone+one&Family=Poppins:wdht@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fina's Travels</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Paytone+one&Family=Poppins:wdht@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+</head>
 
+<body>
+  <!--header--->
 
-        
-    </head>
-    <body>
+  <header>
+    <a href="#" class="logo"> Fina’s Travels </a>
+    <div class="bx bx-menu" id="menu-icon"></div>
 
-
-<!--header--->
-<header>
-    <a href="#" class="logo"> Fina's Travels</a>
-    <div class="bx bx-menu" id="menu-icon"> 
-    </div>
-     <ul class="navbar">
-        <li><a href="#home"> Home</a></li>
-        <li><a href="#package"> Package</a></li>
-        <li><a href="#destination"> Destination</a></li>
-        <li><a href="#contact"> Contact Us</a></li>
+    <ul class="navbar mb-0 gap-4">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#package">Paquetes</a></li>
+      <li><a href="#destination"> Destination</a></li>
+      <li><a href="#Aboutus"> About Us</a></li>
+      <li><a href="#contact"> Contact Us</a></li>
     </ul>
+  </header>
 
-</header>
-
-<!--home section--->
-<section class="home" id="home">
+  <!--home section--->
+  <section class="home" id="home">
     <div class="home-text">
-        <h1>Fina's Travels <br><h2>Where Dreams Take Flight</h2></h1>
-       
-<a href="#" class="home-btn">Let's Go Now</a>
+      <h1>Fina's Travels <br /></h1>
+      <p>Where Dreams Take Flight</p>
+      <a href="" class="home-btn">Let's Go Now</a>
     </div>
-</section>
+  </section>
 
-<!--container--->
-<section class="container">
+  <!-- Reservar vuelo -->
+  <section>
+    <div class="title">
+      <h2 class="">Flight Reservations</h2>
+      <p class="fs-5 ">Book your flight with ease. Enter your departure and destination, departure date, and the number
+        of passengers to find the perfect flight.</p>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <label for="address" class="form-label">Punto de Salida</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Seleccione punto de salida" value=""
+          required="">
+      </div>
+      <div class="col-6 col-md-3">
+        <label for="address" class="form-label">Destino</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Seleccione el destino" value="" required="">
+      </div>
+      <div class="col-6 col-md-3">
+        <label for="address" class="form-label">Fecha de Salida</label>
+        <input type="date" class="form-control" id="lastName" placeholder="Fecha de partida" value="" required="">
+      </div>
+      <div class="col-6 col-md-3">
+        <label for="address" class="form-label">Fecha de Regreso</label>
+        <input type="date" class="form-control" id="lastName" placeholder="Fecha de regreso" value="" required="">
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
     <div class="text">
-<h2>Start Your Vacaton <br>With Lots of Services!</h2>
+      <h2>
+        Comienza tus vacaciones <br />
+        con nosotros.
+      </h2>
     </div>
     <div class="row-items">
-<div class="Ship Cruises">
-<div class="container-img">
-    <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\Imagen2.jpg">
-</div>
-<h4> Ship Cruises</h4>
-<p> 150 Properties</p>
-</div>
-    
-<div class="Destination">
-    <div class="container-img">
-        <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\Imagen1.jpg">
-    </div>
-    <h4>Destinations</h4>
-    <p> 150 Properties</p>
-    </div>
-
-    <div class="Tour Packages">
+      <div class="container-box">
         <div class="container-img">
-           <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\Imagen3.jpg">
+          <img src="img/Imagen2.jpg" alt="" />
         </div>
-        <h4> Tour Packages</h4>
-        <p> 150 Properties</p>
+        <h4>Shi crucies</h4>
+        <p>150 properties</p>
+      </div>
+
+      <div class="container-box">
+        <div class="container-img">
+          <img src="img/Imagen3.jpg" alt="" />
         </div>
+        <h4>Destination</h4>
+        <p>150 properties</p>
+      </div>
 
-        <div class="Hotel Reservations">
-            <div class="container-img">
-                <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\Imagen4.jpg">
-            </div>
-            <h4> Hotel Reservations</h4>
-            <p> 150 Properties</p>
-            </div>
+      <div class="container-box">
+        <div class="container-img">
+          <img src="img/trip1.png" alt="" />
+        </div>
+        <h4>Tour Packages</h4>
+        <p>150 properties</p>
+      </div>
 
-            <div class="Airbnb">
-                <div class="container-img">
-                    <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\Imagen5.jpg">
-                </div>
-                <h4> Airbnb</h4>
-                <p> 150 Properties</p>
-                </div>
-
+      <div class="container-box">
+        <div class="container-img">
+          <img src="img/Imagen4.jpg" alt="" />
+        </div>
+        <h4>Hotel Reservations</h4>
+        <p>150 properties</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<!--Package section--->
-<section class="package" id="package">
-<div class="title">
-<h2>Our Best <br> Tour Package</h2>
-</div>
-
-<div class="package-content">
-<div class="box">
-<div class="thum">
-   <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen7.jpg"> 
-    <h3>$105</h3>
-</div>
-</div>
-
-<div class="dest-content">
-    <div class="location">
-        <h4>Tour DisneyLand</h4>
-        <p>Florida, USA</p>
+  <section class="package" id="package">
+    <div class="title">
+      <h2>
+        Our Upcoming <br />
+        Tour Package
+      </h2>
     </div>
+    <div class="package-content">
+      <div class="box">
+        <div class="thum">
+          <img src="img/imagen7.jpg" alt="img" />
+          <h3>500</h3>
+        </div>
+        <div class="dest-content">
+          <div class="location">
+            <h4>Tour DisneyLand</h4>
+            <p>4h - 5h</p>
+          </div>
+          <div class="stars">
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+          </div>
+        </div>
+      </div>
 
-    <div class="stars">
-        <a href="#"><i class='bx bxs-star'></i></a>
-        <a href="#"><i class='bx bxs-star'></i></a>
-        <a href="#"><i class='bx bxs-star'></i></a>
-        <a href="#"><i class='bx bxs-star'></i></a>
-        <a href="#"><i class='bx bxs-star'></i></a>
-    </div>
-</div>
-</div>
-
-<div class="box">
-    <div class="thum">
-       
-        <img src="img/imagen8.jpg" alt="">
-        <!-- <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen8.jpg"> -->
-        <h3>$92</h3>
-    </div>
-    
-    <div class="dest-content">
-        <div class="location">
+      <div class="box">
+        <div class="thum">
+          <img src="img/imagen8.jpg" alt="img" />
+          <h3>500</h3>
+        </div>
+        <div class="dest-content">
+          <div class="location">
             <h4>Tour Cancun</h4>
-            <p>Mexico</p>
+            <p>4h - 5h</p>
+          </div>
+          <div class="stars">
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="thum">
+          <img src="img/Bahia de las Aguilas.jpg" alt="img" />
+          <h3>500</h3>
+        </div>
+        <div class="dest-content">
+          <div class="location">
+            <h4>Bahia de las Aguilas</h4>
+            <p>4h - 5h</p>
+          </div>
+          <div class="stars">
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thum">
+          <img src="img/Tour Hollywood Drive in Golf.jpg" alt="img" />
+          <h3>500</h3>
+        </div>
+        <div class="dest-content">
+          <div class="location">
+            <h4>Tour Hollywood Drive in Golf</h4>
+            <p>4h - 5h</p>
+          </div>
+          <div class="stars">
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thum">
+          <img src="img/imagen11.jpg" alt="img" />
+          <h3>500</h3>
+        </div>
+        <div class="dest-content">
+          <div class="location">
+            <h4>Tour Boggies</h4>
+            <p>4h - 5h</p>
+          </div>
+          <div class="stars">
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thum">
+          <img src="img/Tour Bogota.jpg" alt="img" />
+          <h3>500</h3>
+        </div>
+        <div class="dest-content">
+          <div class="location">
+            <h4>Tour Bogota</h4>
+            <p>4h - 5h</p>
+          </div>
+          <div class="stars">
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+            <a href="#"><i class="bx bxs-star"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Best Hotel Reservations -->
+  <section class="destination" id="destination">
+    <div class="title">
+      <h2>
+        Our Best <br />
+        Hotel Reservations
+      </h2>
+    </div>
+    <div class="destination-content">
+
+      <div class="col-content">
+        <img src="img/Hotel Bahia Principe.jpg" alt="" />
+        <h5>Hotel Bahia Principe</h5>
+        <p>Samana, DR</p>
+      </div>
+
+      <div class="col-content">
+        <img src="img/Hotel Hilton.jpg" alt="" />
+        <h5>Hotel Hilton</h5>
+        <p>La Romana, DR</p>
+      </div>
+      <div class="col-content">
+        <img src="img/Hotel Hard Rock.jpg" alt="" />
+        <h5>Hotel Hard Rock</h5>
+        <p>Punta Cana, DR</p>
+      </div>
+      <div class="col-content">
+        <img src="img/Hotel Empire.jpg" alt="" />
+        <h5>Hotel Empire</h5>
+        <p>New York, USA</p>
+      </div>
+      <div class="col-content">
+        <img src="img/Hotel Zone.jpg" alt="" />
+        <h5>Hotel Zone</h5>
+        <p>Cancun, Mexico</p>
+      </div>
+      <div class="col-content">
+        <img src="img/Hotel Yotel.jpg" alt="" />
+        <h5>Hotel Yotel</h5>
+        <p>Miami, USA</p>
+      </div>
+    </div>
+  </section>
+  <section class="destination" id="destination">
+    <div class="title">
+      <h2> Our Best <br> Destinations</h2>
+    </div>
+    <div class="destination-content">
+      <div class="col-content">
+        <img
+          src="https://img.freepik.com/foto-gratis/hermosa-vista-empire-states-rascacielos-ciudad-nueva-york_181624-6295.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1712016000&semt=ais">
+        <h5>New York</h5>
+        <p>USA</p>
+      </div>
+      <div class="col-content">
+        <img src="https://cdn.pixabay.com/photo/2020/03/11/06/39/statue-4921193_640.jpg">
+        <h5>Mexico City</h5>
+        <p>Mexico</p>
+      </div>
+      <div class="col-content">
+        <img
+          src="https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?q=80&w=1728&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h5>Florida, Miami</h5>
+        <p>USA</p>
+      </div>
+      <div class="col-content">
+        <img
+          src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h5>Rio de Janeiro</h5>
+        <p>Brazil</p>
+      </div>
+      <div class="col-content">
+        <img src="https://cdn.pixabay.com/photo/2017/09/06/19/35/colombia-2722716_1280.jpg">
+        <h5>Medellin</h5>
+        <p>Colombia</p>
+      </div>
+      <div class="col-content">
+        <img src="https://cdn.pixabay.com/photo/2020/04/06/18/48/madrid-5010803_1280.jpg">
+        <h5>Madrid</h5>
+        <p>España</p>
+      </div>
+      <div class="col-content">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1666283181610-b95ee7e55465?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h5>Paris</h5>
+        <p>Francia</p>
+      </div>
+      <div class="col-content">
+        <img
+          src="https://images.unsplash.com/photo-1586576782138-19304c43d0e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h5>Toronto</h5>
+        <p>Canada</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section class="py-3 py-md-5" id="Aboutus">
+    <div class="row justify-content-xl-center">
+      <div class="col-12 col-md-4">
+        <img class="img-fluid rounded" loading="lazy" src="/img/imagen7.png" alt="About 1">
+      </div>
+      <div class="col-12 col-md-8">
+        <h2 class="mb-3 fw-bold">¿Quienes Somos?</h2>
+        <div class="text-justify">
+          <p class="lead fs-4 text-secondary mb-3">Somos Fina’s Travels una empresa dedicada a la planificación y
+            organización ventas de servicios turísticos Y viajes para clientes individuales o corporativos.</p>
+          <p class="mb-5 fs-4 text-secondary">
+            Somos de renombre que se especializa en la creación de experiencias de viaje excepcionales para sus
+            clientes. Con años de experiencia en la industria, Finas Travels se ha ganado una reputación por ofrecer
+            servicios de alta calidad, atención personalizada y destinos exclusivos en todo el mundo.
+          </p>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row gy-4 gy-md-0  gx-xxl-5X">
+          <div class="col-12 col-md-6 mb-2">
+            <div class="d-flex">
+              <div class="me-4 txt-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-gear-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="h4 mb-3">Vision</h2>
+                <p class="text-secondary fs-5 mb-0 text-justify">Convertirnos en la mejor opción, para todas las
+                  personas de
+                  diferentes partes del mundo, para visitar sus lugares soñados, brindándoles a nuestros clientes
+                  los mejores servicios para así expandirnos a todas partes del mundo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-2">
+            <div class="d-flex">
+              <div class="me-4 txt-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fire"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="h4 mb-3">Mision</h2>
+                <p class="text-secondary fs-5 mb-0 text-justify">Es que nuestros clientes junto a nosotros puedan
+                  explorar todos los
+                  rincones del mundo, visitar sus lugares soñados y puedan disfrutar de todas las maravillas del
+                  mundo, mostrando siempre calidad y excelencia para que nuestros clientes se sientan cómodos y
+                  que cada vez que deseen viajar a un destino piensen en nosotros para cumplirlo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mt-1">
+            <div class="d-flex">
+              <div class="me-4 txt-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fire"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="h4 mb-3">Filosofía</h2>
+                <p class="text-secondary text-justify fs-5 mb-0">Fina’s Travels promueve una filosofía de exploración y
+                  descubrimiento, alentando a sus clientes a sumergirse en nuevas culturas, destinos y
+                  experiencias. La agencia se esfuerza por ofrecer itinerarios únicos y emocionantes que permitan
+                  a los viajeros descubrir el mundo de manera auténtica.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mt-1">
+            <div class="d-flex">
+              <div class="me-4 txt-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fire"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="h4 mb-3">Valores</h2>
+                <p class="text-secondary text-justify fs-5 mb-0">Fina’s Travels promueve una filosofía de exploración y
+                  descubrimiento, alentando a sus clientes a sumergirse en nuevas culturas, destinos y
+                  experiencias. La agencia se esfuerza por ofrecer itinerarios únicos y emocionantes que permitan
+                  a los viajeros descubrir el mundo de manera auténtica.
+                </p>
+              </div>
+            </div>
+          </div>
 
         </div>
-        <div class="stars">
-            <a href="#"><i class='bx bxs-star'></i></a>
-            <a href="#"><i class='bx bxs-star'></i></a>
-            <a href="#"><i class='bx bxs-star'></i></a>
-            <a href="#"><i class='bx bxs-star'></i></a>
-            <a href="#"><i class='bx bxs-star'></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact">
+    <div class="col-12">
+      <h2 class="mb-3 fw-bold">Contactanos</h2>
+      <form class="needs-validation" novalidate="">
+        <div class="row g-3 mb-3">
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Escriba su apellido" value=""
+              required="">
+          </div>
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Escriba su apellido" value=""
+              required="">
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Escriba su email">
+          </div>
+          <div class="col-12">
+            <label for="username" class="form-label">Teléfono</label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="username" placeholder="Escriba su número de teléfono"
+                required="">
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="address" class="form-label">Mensaje</label>
+            <textarea type="text" class="form-control" id="address" placeholder="Escriba su mensaje" required=""
+              rows="3"></textarea>
+          </div>
+        </div>
+        <button class="btn bg-color-primary" type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!--FOOTER--->
+  <section id="footer">
+    <div class="footer">
+      <div class="main gap-3">
+        <div class="list">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fina's Premium</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Tour</a></li>
+          </ul>
+        </div>
+
+        <div class="list">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="#">Calle A 25, Barrio La Union</a></li>
+            <li><a href="#">Santiago, DR</a></li>
+            <li><a href="#">809-575-9274</a></li>
+
+
+          </ul>
+        </div>
+
+        <div class="list">
+          <h4>Connect</h4>
+          <div class="social">
+            <a href=""><i class='bx bxl-instagram-alt'></i></a>
+            <a href=""><i class='bx bxl-gmail'></i></a>
+            <a href=""><i class='bx bxl-youtube'></i></a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="box">
-        <div class="thum">
-            <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen9.jpg">
-            <h3>$85</h3>
-        </div>
-        
-        <div class="dest-content">
-            <div class="location">
-                <h4>Tour Bahia de las Aguilas</h4>
-                <p>Pedernales, DR</p>
-            </div>
-            <div class="stars">
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="box">
-            <div class="thum">
-                <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen10.jpg">
-                <h3>$110</h3>
-            </div>
-            
-            <div class="dest-content">
-                <div class="location">
-                    <h4>Tour Hollywood Drive in Golf</h4>
-                    <p>Florida</p>
-                </div>
-                <div class="stars">
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                </div>
-              </div>
-            </div>
-        
-            <div class="box">
-                <div class="thum">
-                    <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen11.jpg">
-                    <h3>$50</h3>
-                </div>
-                
-                <div class="dest-content">
-                    <div class="location">
-                        <h4>Tour Boggies</h4>
-                        <p>Puerto Plata, DR</p>
-                    </div>
-                    <div class="stars">
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                    </div>
-                  </div>
-                </div>
-            
-                <div class="box">
-                    <div class="thum">
-                        <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen12.jpg">
-                        <h3>$130</h3>
-                    </div>
-                    
-                    <div class="dest-content">
-                        <div class="location">
-                            <h4>Tour Bogota</h4>
-                            <p>Colombia</p>
-                        </div>
-                        <div class="stars">
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                        </div>
-                      </div>
-                    </div>
-                                    
-</div>
-</section>
 
-
-<!--Hotel section--->
-<section class="hotel" id="hotel">
-    <div class="title">
-    <h2>Our Best <br> Hotel Reservations</h2>
     </div>
-    
-    <div class="package-content">
-    <div class="box">
-    <div class="thum">
-        <div img class="">
-        <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen13.jpg">
-        <h3>$80</h3>
-    </div>
-    </div>
-    
-    <div class="dest-content">
-        <div class="location">
-            <h4>Hotel Bahia Principe</h4>
-            <p>Samana, DR</p>
-        </div>
-        <div class="stars">
-            <a href="#"><i class='bx bxs-star'></i></a>
-            <a href="#"><i class='bx bxs-star'></i></a>
-            <a href="#"><i class='bx bxs-star'></i></a>
-            <a href="#"><i class='bx bxs-star'></i></a>
-            <a href="#"><i class='bx bxs-star'></i></a>
-        </div>
-    </div>
-    </div>
-    
-    <div class="box">
-        <div class="thum">
-            <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen14.jpg">
-            <h3>$120</h3>
-        </div>
-        
-        <div class="dest-content">
-            <div class="location">
-                <h4>Hotel Hilton</h4>
-                <p>La Romana, DR</p>
-    
-            </div>
-            <div class="stars">
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="box">
-            <div class="thum">
-              <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen15.jpg">
-                <h3>$100</h3>
-            </div>
-            
-            <div class="dest-content">
-                <div class="location">
-                    <h4>Hotel Hard Rock</h4>
-                    <p>Punta Cana, DR</p>
-                </div>
-                <div class="stars">
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                </div>
-              </div>
-            </div>
-        
-            <div class="box">
-                <div class="thum">
-                    <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen16.jpg">
-                    <h3>$150</h3>
-                </div>
-                
-                <div class="dest-content">
-                    <div class="location">
-                        <h4>Hotel Empire</h4>
-                        <p>New York, USA</p>
-                    </div>
-                    <div class="stars">
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                        <a href="#"><i class='bx bxs-star'></i></a>
-                    </div>
-                  </div>
-                </div>
-            
-                <div class="box">
-                    <div class="thum">
-                        <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen17.jpg">
-                        <h3>$99</h3>
-                    </div>
-                    
-                    <div class="dest-content">
-                        <div class="location">
-                            <h4>Hotel Zone</h4>
-                            <p>Cancun, Mexico</p>
-                        </div>
-                        <div class="stars">
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                        </div>
-                      </div>
-                    </div>
-                
-                    <div class="box">
-                        <div class="thum">
-                            <img src="C:\Users\Emely\OneDrive\Escritorio\FT page images\imagen18.jpg">
-                            <h3>$130</h3>
-                        </div>
-                        
-                        <div class="dest-content">
-                            <div class="location">
-                                <h4>Hotel Yotel</h4>
-                                <p>Miami, USA</p>
-                            </div>
-                            <div class="stars">
-                                <a href="#"><i class='bx bxs-star'></i></a>
-                                <a href="#"><i class='bx bxs-star'></i></a>
-                                <a href="#"><i class='bx bxs-star'></i></a>
-                                <a href="#"><i class='bx bxs-star'></i></a>
-                                <a href="#"><i class='bx bxs-star'></i></a>
-                            </div>
-                          </div>
-                        </div>
-                                        
-    </div>
-    </section>
+  </section>
 
-    <!--cruises section--->
-<section class="cruise" id="cruise">
-    <div class="title">
-    <h2>Our <br> Ship Cruises</h2>
-    </div>
-    
-    <div class="package-content">
-    <div class="box">
-    <div class="thum">
-        <div img class="">
-        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/230012493.jpg?k=c1bed95e5c169c7055e4c44d8325428ab7884c21f74d0d9b38d04602941ec1e6&o=&hp=1">
-        <h3>$995</h3>
-    </div>
-    </div>
-    
-    <div class="dest-content">
-        <div class="location">
-            <h4>7 Noches Southen Caribbean Cruise</h4>
-            <p>Cartagena Colombia</p>
-        </div>
-    
-    </div>
-    </div>
-    
-    <div class="box">
-        <div class="thum">
-            <img src="https://i0.wp.com/caribehoy.com/wp-content/uploads/2021/03/HOTEL-scaled.jpg?resize=696%2C404&ssl=1">
-            <h3>$1,350</h3>
-        </div>
-        
-        <div class="dest-content">
-            <div class="location">
-                <h4>5 Noches Latinoamerican Cruise</h4>
-                <p>República Dominicana</p>
-    
-            </div>
-          
-          </div>
-        </div>
-    
-        <div class="box">
-            <div class="thum">
-               <img src="data:image/jpeg;base64,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">
-                
-                <h3>$1,000</h3>
-            </div>
-            
-            <div class="dest-content">
-                <div class="location">
-                    <h4>5 Noches Latinoamerican Cruise</h4>
-                    <p>Republica Dominicana</p>
-                </div>
-           
-              </div>
-            </div>
-        
-            <div class="box">
-                <div class="thum">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9L2FiMqnv-oobyUB02nVJdEJMon3X1Dzetg&usqp=CAU">
-                    <h3>$150</h3>
-                </div>
-                
-                <div class="dest-content">
-                    <div class="location">
-                        <h4>Hotel Empire</h4>
-                        <p>New York, USA</p>
-                    </div>
-                   
-                  </div>
-                </div>
-            
-                <div class="box">
-                    <div class="thum">
-                        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/ec/cb/06.jpg">
-                        <h3>$99</h3>
-                    </div>
-                    
-                    <div class="dest-content">
-                        <div class="location">
-                            <h4>Hotel Zone</h4>
-                            <p>Cancun, Mexico</p>
-                        </div>
-                        
-                      </div>
-                    </div>
-                
-                    <div class="box">
-                        <div class="thum">
-                            <img src="https://www.civitatis.com/blog/wp-content/uploads/2022/10/panoramica-plaza-bolivar-bogota.jpg">
-                            <h3>$130</h3>
-                        </div>
-                        
-                        <div class="dest-content">
-                            <div class="location">
-                                <h4>Hotel Yotel</h4>
-                                <p>Miami, USA</p>
-                            </div>
-                          
-                          </div>
-                        </div>
-                                        
-    </div>
-    </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-      <!--airbnb section--->
-<section class="airbnb" id="airbnb">
-    <div class="title">
-    <h2>Airbnb's</h2>
-    </div>
-    
-    <div class="package-content">
-    <div class="box">
-    <div class="thum">
-        <div img class="">
-        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/230012493.jpg?k=c1bed95e5c169c7055e4c44d8325428ab7884c21f74d0d9b38d04602941ec1e6&o=&hp=1">
-        <h3>$80</h3>
-    </div>
-    </div>
-    
-    <div class="dest-content">
-        <div class="location">
-            <h4>Hotel Bahia Principe</h4>
-            <p>Samana, DR</p>
-        </div>
-       
-    </div>
-    </div>
-    
-    <div class="box">
-        <div class="thum">
-            <img src="https://i0.wp.com/caribehoy.com/wp-content/uploads/2021/03/HOTEL-scaled.jpg?resize=696%2C404&ssl=1">
-            <h3>$120</h3>
-        </div>
-        
-        <div class="dest-content">
-            <div class="location">
-                <h4>Hotel Hilton</h4>
-                <p>La Romana, DR</p>
-    
-            </div>
-           
-          </div>
-        </div>
-    
-        <div class="box">
-            <div class="thum">
-               <img src="data:image/jpeg;base64,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">
-                
-                <h3>$100</h3>
-            </div>
-            
-            <div class="dest-content">
-                <div class="location">
-                    <h4>4 Noches Caribbean Cruise</h4>
-                    <p>New York, USA</p>
-                </div>
-                
-              </div>
-            </div>
-        
-            <div class="box">
-                <div class="thum">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9L2FiMqnv-oobyUB02nVJdEJMon3X1Dzetg&usqp=CAU">
-                    <h3>$400</h3>
-                </div>
-                
-                <div class="dest-content">
-                    <div class="location">
-                        <h4>3 Noches Bahamas & Perfect Day</h4>
-                        <p>Miami florida, USA</p>
-                    </div>
-                    
-                  </div>
-                </div>
-            
-                <div class="box">
-                    <div class="thum">
-                        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/ec/cb/06.jpg">
-                        <h3>$410</h3>
-                    </div>
-                    
-                    <div class="dest-content">
-                        <div class="location">
-                            <h4>Wester caribbean </h4>
-                            <p>Miami,florida, </p>
-                        </div>
-                       
-                      </div>
-                    </div>
-                
-
-
-
-    
-                    <div class="box">
-                        <div class="thum">
-                            <img src="https://www.civitatis.com/blog/wp-content/uploads/2022/10/panoramica-plaza-bolivar-bogota.jpg">
-                            <h3>$130</h3>
-                        </div>
-                        
-                        <div class="dest-content">
-                            <div class="location">
-                                <h4>Hotel Yotel</h4>
-                                <p>Miami, USA</p>
-                            </div>
-                            
-                          </div>
-                        </div>
-                                        
-    </div>
-    </section>
-
-
-<!--destination section--->  
-<section class="destination" id="destination">
-    <div class="title">
-        <h2> Our Best <br> Destinations</h2>
-        </div>
-
-<div class="destination-content">
-<div class="col-content">
-    <img src="https://img.freepik.com/foto-gratis/hermosa-vista-empire-states-rascacielos-ciudad-nueva-york_181624-6295.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1712016000&semt=ais">
-<h5>New York</h5>
-<p>USA</p>
-</div>
-    
-
-    <div class="col-content">
-        <img src="https://cdn.pixabay.com/photo/2020/03/11/06/39/statue-4921193_640.jpg">
-    <h5>Mexico City</h5>
-    <p>Mexico</p>
-    </div>
-
-
-    <div class="col-content">
-        <img src="https://pixabay.com/get/ga183d223e3e4e7892f00fedd922d8455173e3e9f0c4ca97d706bd4454e3ca5bfd848e9b71cce82b9075aa0f21b8ab21834ca381cc98bad640fd5b066c237d47f50413368295bb6ef0809d02bed5047f0_640.jpg">
-    <h5>Florida, Miami</h5>
-    <p>USA</p>
-    </div>
-         
-
-        <div class="col-content">
-            <img src="https://pixabay.com/get/g7d7d3658f1a7d7f48a3c8409444c74d4271ac3b0a697c99d2728ff714d9925d9b16bc3018d889489fe44ecfd553d87db0170330e0aa93630e36cfd6c494c156687771102d91d3fcfda3e05065fa3f2c8_640.jpg">
-        <h5>Rio de Janeiro</h5>
-        <p>Brazil</p>
-        </div>
-          
-
-            <div class="col-content">
-                <img src="https://pixabay.com/get/g87168fb71f292b952fb963fa2b72a4e36ec3e8fed76cc7c7e1a64faaf6e2319c9122b4068799d4ea3409c38ff32c25f04997f7c0fd45c8626dfca504c8496e74b31aadd08d40fed497c96ca2d4dd1756_640.jpg">
-            <h5>Medellin</h5>
-            <p>Colombia</p>
-            </div>
-               
-
-                <div class="col-content">
-                    <img src="https://pixabay.com/get/g922438b3161483755e6c2ed4244b6d9666a358fd144aaa13ad8e5379bf0dc3e5a6b0639b2e9568160576d52720a1909995d3d6b45d3e955485a463e1a7aabf441b1e39a1457e42631d59dec4f8133bc8_640.jpg">
-                <h5>Madrid</h5>
-                <p>España</p>
-                </div>
-                   
-
-                    <div class="col-content">
-                        <img src="https://pixabay.com/get/gf93127a3075a4571e5e3e8a7b3aa24c105165ab6c6165558acbcc8e42e6d5870bf97f73f54b70666c26110c8e09203cb9723083506649a7f3b624ef3c73794ac9d604ba7d1caed5ef7295772f40b8d19_640.jpg">
-                    <h5>Venecia</h5>
-                    <p>Italia</p>
-                    </div>
-                       
-
-                        <div class="col-content">
-                            <img src="https://pixabay.com/get/g0d5e723f24bc29210befb1f52df64559b9cc264d15619abb8b4e7e38282c85bace4d5d7766f266ad9a1a103e8c9b7fd491fd08cd52d1840f5848d3b6687f326ff9625c0af06cd217f0acfa5fbc13984a_640.jpg">
-                        <h5>Paris</h5>
-                        <p>Francia</p>
-                        </div>
-                          
-
-        
-                            <div class="col-content">
-                                <img src="https://pixabay.com/get/g06a472989d0e3f4e7a937a01f9b4d90291a64607cc5e84518d794ccacf387d2b32373ba89ec96cb716a397defa958cbad2c6474b964167bd7d0660686bd0be34c5785fb19d8e2b7a805d7b3017f9299a_640.jpg">
-                            <h5>Toronto</h5>
-                            <p>Canada</p>
-                            </div>
-                                </div> 
-
-                              
-
-</section>
-
-<!--Newsletter--->
-<section class="newsletter">
-    <div class="news-text">
-        <h2>Form</h2>
-    </div>
-        <div class="send">
-<form>
-<input type="email" placeholder="Write Your Email" required> 
-<input type="submit" value="submit">
-</form> 
-    </div>
-</section>
-
-<!--footer--->
-<section id="contact">
-    <div class="footer">
-      <div class="main">
-        <div class="list">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Fina's Premium</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Tour</a></li>
-            </ul>
-        </div>
-
-        <div class="list">
-            <h4>Contact Info</h4>
-            <ul>
-                <li><a href="#">Calle A 25,  Barrio La Union</a></li>
-                <li><a href="#">Santiago, DR</a></li>
-                <li><a href="#">809-575-9274</a></li>
-                
-              
-            </ul>
-        </div>
-
-        <div class="list">
-            <h4>Connect</h4>
-            <div class="social">
-                <a href=""><i class='bx bxl-instagram-alt'></i></a>
-                <a href=""><i class='bx bxl-gmail' ></i></a>
-                <a href=""><i class='bx bxl-youtube' ></i></a>
-            </div>
-        </div>
-    </div>
- </div>
-
-
- </div>
-</section>
-
-<!--link to js--->
-<script type="text/javascript" src="js/script.js"></script>
-
+  <script src="app.js"></script>
 </body>
+
 </html>
