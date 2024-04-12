@@ -97,7 +97,7 @@
     <div class="package-content">
       <div class="box">
         <div class="thum">
-          <img src="img/imagen7.jpg" alt="img" />
+          <a href="/Pages/Tour DisneyLand.html"> <img src="img/imagen7.jpg" alt="img" /> </a>
           <h3>$105</h3>
         </div>
         <div class="dest-content">
@@ -545,33 +545,34 @@
   <section id="contact">
     <div class="col-12">
       <h2 class="mb-3 fw-bold">Contactanos</h2>
-      <form class="needs-validation" novalidate="">
+      <form class="needs-validation" action="mailto:correo@ejemplo.com" method="post" enctype="text/plain" novalidate>
         <div class="row g-3 mb-3">
           <div class="col-sm-6">
-            <label for="lastName" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="lastName" placeholder="Escriba su nombre" value=""
-              required="">
+            <label for="firstName" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Escriba su nombre" value="" required>
+            <div class="invalid-feedback">Por favor, ingresa tus nombres.</div>
           </div>
           <div class="col-sm-6">
             <label for="lastName" class="form-label">Apellidos</label>
-            <input type="text" class="form-control" id="lastName" placeholder="Escriba su apellido" value=""
-              required="">
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Escriba su apellido" value="" required>
+            <div class="invalid-feedback">Por favor, ingresa tus apellidos.</div>
           </div>
           <div class="col-12">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Escriba su email">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Escriba su email" required>
+            <div class="invalid-feedback">Por favor, ingresa una dirección de correo electrónico válida.</div>
           </div>
           <div class="col-12">
             <label for="username" class="form-label">Teléfono</label>
             <div class="input-group has-validation">
-              <input type="text" class="form-control" id="username" placeholder="Escriba su número de teléfono"
-                required="">
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="Escriba su número de teléfono" required>
+              <div class="invalid-feedback">Por favor, ingresa tu número de teléfono.</div>
             </div>
           </div>
           <div class="col-12">
-            <label for="address" class="form-label">Mensaje</label>
-            <textarea type="text" class="form-control" id="address" placeholder="Escriba su mensaje" required=""
-              rows="3"></textarea>
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Escriba su mensaje" required rows="3"></textarea>
+            <div class="invalid-feedback">Por favor, escribe un mensaje.</div>
           </div>
         </div>
         <button class="btn bg-color-primary" type="submit">Enviar mensaje</button>
@@ -627,6 +628,24 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
+    <script>
+      (function() {
+          'use strict';
+    
+          var forms = document.querySelectorAll('.needs-validation');
+          Array.prototype.slice.call(forms)
+              .forEach(function(form) {
+                  form.addEventListener('submit', function(event) {
+                      if (!form.checkValidity()) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                      }
+    
+                      form.classList.add('was-validated');
+                  }, false);
+              });
+      })();
+    </script>
   <script src="app.js"></script>
 </body>
 
